@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:id="@+id/vm_relative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:id="@+id/vm_cv"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="40dp"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="15dp"
+        >
+
+        <ImageView
+            android:id="@+id/vm_img_main"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/logo"/>
+
+    </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/vm_cv">
+
+            <TextView
+                android:id="@+id/vm_tv_week"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="MINGGU ke 1"
+                android:fontFamily="@font/nunitoregular"
+                android:textSize="20dp"/>
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/vm_tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="oleh"
+                android:fontFamily="@font/nunitobold"
+                android:textSize="15dp"/>
+
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:id="@+id/vm_tv_durationtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="oleh"
+                android:fontFamily="@font/nunitoregular"
+                android:textSize="15dp"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+

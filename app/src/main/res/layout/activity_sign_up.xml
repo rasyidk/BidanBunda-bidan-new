@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUp.SignUp">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/up_rel_bot"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@id/up_rel_bot"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar"
+                    android:fontFamily="@font/nunitobold"
+                    android:textColor="@color/mainColor"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Langkah 1 dari 2"
+                    android:fontFamily="@font/nunitoregular"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@color/mainColor"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:errorEnabled="true"
+                    android:fontFamily="@font/nunitoregular"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <EditText
+                        android:id="@+id/up_et_nama_lengkap"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/nunitoregular"
+                        android:layout_marginRight="30dp"
+                        android:backgroundTint="@color/mainColor"
+                        android:hint="Nama Lengkap" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mainColor"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:errorEnabled="true"
+                    android:fontFamily="@font/nunitoregular"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <EditText
+                        android:id="@+id/up_et_username"
+                        android:fontFamily="@font/nunitoregular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:backgroundTint="@color/mainColor"
+                        android:hint="Username" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/up_input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/mainColor"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:errorEnabled="true"
+                    android:fontFamily="@font/nunitoregular"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <EditText
+                        android:id="@+id/up_et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/mainColor"
+                        android:drawableRight="@drawable/ic_visibility_black_24dp"
+                        android:hint="Password"
+                        android:fontFamily="@font/nunitoregular"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/mainColor"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="8"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:errorEnabled="true"
+                    android:fontFamily="@font/nunitoregular"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <EditText
+                        android:id="@+id/up_et_password_con"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/mainColor"
+                        android:hint="Konfirmasi Password"
+                        android:inputType="textPassword"
+                        app:counterEnabled="true"
+                        android:fontFamily="@font/nunitoregular"
+                        app:counterMaxLength="8" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mainColor"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:errorEnabled="true"
+                    android:fontFamily="@font/nunitoregular"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <com.santalu.maskedittext.MaskEditText
+                        android:id="@+id/up_et_phone"
+                        android:hint="Phone number"
+                        android:inputType="phone"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/nunitoregular"
+                        app:met_mask="(+62) ###############"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mainColor"
+                    app:counterOverflowTextAppearance="@style/CounterOverFlow"
+                    app:counterTextAppearance="@style/CounterText"
+                    app:errorEnabled="true"
+                    android:fontFamily="@font/nunitoregular"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <EditText
+                        android:id="@+id/up_et_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/nunitoregular"
+                        android:backgroundTint="@color/mainColor"
+                        android:hint="Alamat" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/up_rel_bot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:layout_marginRight="30dp"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/up_bt_batal"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/activity_sign_up_button_login"
+                android:text="Batal"
+                android:fontFamily="@font/nunitobold"
+                android:textAllCaps="false"
+                android:textColor="@color/mainColor"
+                android:textSize="18dp" />
+
+
+            <Button
+                android:id="@+id/up_bt_lanjut"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/activity_sign_up_button_signup"
+                android:text="Lanjut"
+                android:fontFamily="@font/nunitobold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </LinearLayout>
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

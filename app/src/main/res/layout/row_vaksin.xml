@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/vs_tv_name"
+                android:fontFamily="@font/nunitobold"
+                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_height="wrap_content"
+                android:text="Nm Vaksin"
+                style="@style/TextAppearance.AppCompat.Headline"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/greyline" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:id="@+id/vm_cv"
+                android:layout_height="wrap_content"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_margin="10dp"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="0dp"
+                >
+
+                <ImageView
+                    android:id="@+id/vs_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/vs_tv_desc"
+                    android:layout_width="match_parent"
+                    android:fontFamily="@font/nunitoregular"
+                    android:layout_height="match_parent"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_above="@id/vs_cv_toogle"
+                    android:text="hello"/>
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/vs_cv_toogle"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_alignParentBottom="true"
+                    card_view:cardElevation="0dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+                        />
+
+                        <RelativeLayout
+                            android:id="@+id/vs_rl_habis"
+                            android:layout_width="60dp"
+                            android:layout_weight="1"
+                            android:background="@color/redhabis"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/vs_tv_habis"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:text="Habis"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/vs_rl_tersedia"
+                            android:layout_width="60dp"
+                            android:layout_weight="1"
+                            android:background="@color/thirdColor"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/vs_tv_tersedia"
+                                android:fontFamily="@font/nunitosemibold"
+                                android:textColor="@color/white"
+                                android:layout_width="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_height="wrap_content"
+                                style="@style/TextAppearance.AppCompat.Caption"
+                                android:text="Tersedia"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

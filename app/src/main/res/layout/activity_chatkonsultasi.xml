@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ck_main_rel"
+        android:layout_width="match_parent"
+        android:background="@color/secondcolor"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ck_image_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            />
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ck_image_pro"
+            android:layout_width="80dp"
+            android:layout_toRightOf="@id/ck_image_backbutton"
+            android:layout_height="80dp"
+            android:src="@drawable/userprofile"
+            android:padding="15dp"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            />
+
+        <TextView
+            android:id="@+id/ck_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ck_image_pro"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/ck_lineprogressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:indeterminateTint="@color/mainColor"
+        android:layout_marginTop="-7dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/ck_Rel"
+            android:background="@color/grey"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ck_recyclervww"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ck_Rel"
+                app:reverseLayout="true"
+                android:scrollbars="vertical"/>
+
+            <ProgressBar
+                android:id="@+id/ck_main_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <include layout="@layout/error_layout"/>
+        </FrameLayout>
+        <RelativeLayout
+            android:id="@+id/ck_Rel"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ck_et_msg"
+                android:layout_toLeftOf="@id/ck_btn_sendksl"
+                android:layout_width="match_parent"
+                android:hint="Ketik Pesan"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_et"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/ck_btn_sendksl"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:src="@drawable/ic_send"
+                android:layout_alignParentRight="true"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

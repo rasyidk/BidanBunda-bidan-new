@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ksl_ln_main"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/pro_image_main"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:src="@drawable/userprofile"
+        app:civ_border_color="@color/grey"
+        app:civ_border_width="2dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ksl_tv_name"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_toLeftOf="@id/ksl_tv_date"
+                    android:layout_height="wrap_content"
+                    android:text="bidan name"/>
+
+
+                <TextView
+                    android:id="@+id/ksl_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="date"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ksl_tv_msg"
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:fontFamily="@font/nunitoregular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_toLeftOf="@id/ksl_tv_time"
+                    android:layout_centerVertical="true"
+                    android:lines="1"
+                    android:text="aa"/>
+
+                <TextView
+                    android:id="@+id/ksl_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:lines="1"
+                    android:text="aa"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

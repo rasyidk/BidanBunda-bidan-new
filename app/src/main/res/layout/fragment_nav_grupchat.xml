@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_rel"
+        android:layout_width="match_parent"
+        android:background="@color/mainColor"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Group"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/gc_lineprogressbar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:indeterminateTint="@color/secondcolor"
+        android:layout_marginTop="-7dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_above="@+id/Rel"
+            android:background="@color/grey"
+            android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/card_recycler_view_gc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/Rel"
+            app:reverseLayout="true"
+            android:scrollbars="vertical"/>
+
+            <ProgressBar
+                android:id="@+id/main_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <include layout="@layout/error_layout"/>
+        </FrameLayout>
+        <RelativeLayout
+            android:id="@+id/Rel"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/gc_et_msg"
+                android:layout_toLeftOf="@id/gc_btn_sendgroup"
+                android:layout_width="match_parent"
+                android:hint="Ketik Pesan"
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_et"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content" />
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/gc_btn_sendgroup"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:src="@drawable/ic_send"
+                android:layout_alignParentRight="true"
+                app:cb_color="#99CC00"
+                app:cb_pressedRingWidth="8dip" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_videomateri">
+
+    <fragment
+        android:id="@+id/navigation_videomateri"
+        android:name="com.example.bidanbunda_client.bottomnavigation.videomateri.nav_videomateri"
+        android:label="videomateri"
+        tools:layout="@layout/fragment_nav_videomateri" />
+
+    <fragment
+        android:id="@+id/navigation_grupchat"
+        android:name="com.example.bidanbunda_client.bottomnavigation.grupchat.nav_grupchat"
+        android:label="grupchat"
+        tools:layout="@layout/fragment_nav_grupchat" />
+
+    <fragment
+        android:id="@+id/navigation_konsultasi"
+        android:name="com.example.bidanbunda_client.bottomnavigation.konsultasi.nav_konsultasi"
+        android:label="emergency"
+        tools:layout="@layout/fragment_nav_konsultasi" />
+
+    <fragment
+        android:id="@+id/navigation_notification"
+        android:name="com.example.bidanbunda_client.bottomnavigation.notification.nav_notification"
+        android:label="notification"
+        tools:layout="@layout/fragment_nav_notification" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.bidanbunda_client.bottomnavigation.profile.nav_profile"
+        android:label="profile"
+        tools:layout="@layout/fragment_nav_profile" />
+</navigation>

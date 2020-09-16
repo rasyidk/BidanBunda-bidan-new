@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_videomateri"
+        android:icon="@drawable/ic_videomateri"
+        android:title="videomateri" />
+
+    <item
+        android:id="@+id/navigation_grupchat"
+        android:icon="@drawable/ic_grupchat"
+        android:title="grupchat" />
+
+    <item
+        android:id="@+id/navigation_konsultasi"
+        android:icon="@drawable/ic_konsultasi"
+        android:title="emergency" />
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="notification" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="profile" />
+
+</menu>

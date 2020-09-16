@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Custom Footer -->
+
+        <LinearLayout
+            android:id="@+id/asc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/as"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/activity_profile_oval"
+                android:orientation="vertical"
+                android:layout_weight="70">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:id="@+id/pro_img_menu"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_menu_black_24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_weight="30">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_marginTop="75dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/rel1"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <RelativeLayout
+                                    android:id="@+id/relheh"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:id="@+id/pro_tv_name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:drawablePadding="5dp"
+                                        android:fontFamily="@font/nunitobold"
+                                        android:textColor="@color/black"
+                                        android:textSize="20dp"
+                                        android:text="NAMA"/>
+
+                                </RelativeLayout>
+
+
+                                <Button
+                                    android:id="@+id/pro_bt_edit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="Edit Profile"
+                                    android:textAllCaps="false"
+                                    android:visibility="gone"
+                                    android:textColor="@color/mainColor"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_below="@id/relheh"
+                                    android:layout_centerHorizontal="true"
+                                    android:background="@drawable/activity_profile_btn_rounded"/>
+
+
+                            </RelativeLayout>
+
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_ket"
+                            android:layout_below="@+id/rel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginTop="10dp"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/nunitoregular"
+                            android:text="Data sudah dilindungi"/>
+
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/edt_coba"-->
+                        <!--                            android:layout_below="@+id/tv_ket"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:drawableRight="@mipmap/ic_launcher"-->
+                        <!--                            android:textSize="16dp"-->
+                        <!--                            android:text="coba"/>-->
+
+
+
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/btn_coba"-->
+                        <!--                            android:layout_below="@+id/tv_ket"-->
+                        <!--                            android:layout_toRightOf="@id/edt_coba"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:text="EDIT"/>-->
+
+                        <!--                        <Button-->
+                        <!--                            android:id="@+id/btn_save"-->
+                        <!--                            android:layout_below="@+id/tv_ket"-->
+                        <!--                            android:layout_toRightOf="@id/edt_coba"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:visibility="invisible"-->
+                        <!--                            android:text="Save"/>-->
+
+                        <LinearLayout
+                            android:layout_below="@id/tv_ket"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunitoregular"
+                                android:text="Alamat"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" >
+
+                                <TextView
+                                    android:id="@+id/pro_tv_alamat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/nunitoregular"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp"
+                                    android:textSize="20dp"
+                                    android:background="@drawable/textlines"
+                                    android:hint="haha"/>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunitoregular"
+                                android:text="No. Telp"/>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" >
+
+                                <TextView
+                                    android:id="@+id/pro_tv_notelp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="5dp"
+                                    android:fontFamily="@font/nunitoregular"
+                                    android:paddingBottom="5dp"
+                                    android:textSize="20dp"
+                                    android:background="@drawable/textlines"
+                                    android:hint="haha"/>
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="0dp"
+            card_view:layout_anchor="@+id/as"
+            card_view:layout_anchorGravity="center|bottom">
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pro_image_main"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/userprofile"
+                app:civ_border_color="#fff"
+                app:civ_border_width="2dp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

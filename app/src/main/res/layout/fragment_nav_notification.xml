@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_rel"
+        android:layout_width="match_parent"
+        android:background="@color/secondcolor"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notification"
+            android:fontFamily="@font/nunitobold"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/greybackground"
+        android:layout_height="match_parent"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notif_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            />
+
+        <ProgressBar
+            android:id="@+id/notif_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/notif_shimmer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_videomateri"/>
+                <include layout="@layout/shimmer_videomateri"/>
+                <include layout="@layout/shimmer_videomateri"/>
+                <include layout="@layout/shimmer_videomateri"/>
+                <include layout="@layout/shimmer_videomateri"/>
+                <include layout="@layout/shimmer_videomateri"/>
+                <include layout="@layout/shimmer_videomateri"/>
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <include layout="@layout/error_layout"/>
+        <include layout="@layout/null_layout"/>
+
+
+    </FrameLayout>
+</LinearLayout>

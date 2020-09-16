@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bottomnavigation.profile.extend.jadwalDiskusi.jadwalDiskusi">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/catk_image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_arrow_back_blackblack"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/catk_image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catatan Khusus"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/catk_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/catk_card_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/catk_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--                <include layout="@layout/shimmer_videomateri"/>-->
+                <!--                <include layout="@layout/shimmer_videomateri"/>-->
+                <!--                <include layout="@layout/shimmer_videomateri"/>-->
+                <!--                <include layout="@layout/shimmer_videomateri"/>-->
+                <!--                <include layout="@layout/shimmer_videomateri"/>-->
+                <!--                <include layout="@layout/shimmer_videomateri"/>-->
+                <!--                <include layout="@layout/shimmer_videomateri"/>-->
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <ProgressBar
+            android:id="@+id/catk_main_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <include layout="@layout/error_layout"/>
+    </FrameLayout>
+</LinearLayout>

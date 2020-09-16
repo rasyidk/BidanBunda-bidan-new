@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:orientation="vertical"
+android:layout_height="match_parent"
+tools:context=".bottomnavigation.profile.extend.jadwalDiskusi.jadwalDiskusi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/jdmain_image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_arrow_back_blackblack"
+            />
+
+        <TextView
+            android:layout_toRightOf="@id/jdmain_image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Diskusi"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jdmain_recyclervww"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+        <ProgressBar
+            android:id="@+id/jdmain_main_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <include layout="@layout/error_layout"/>
+        <include layout="@layout/null_layout"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/jdmain_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:background="@color/secondcolor"
+            app:srcCompat="@drawable/ic_add_black_24dp" />
+    </FrameLayout>
+</LinearLayout>

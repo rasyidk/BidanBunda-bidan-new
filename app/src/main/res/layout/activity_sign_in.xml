@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignIn.SignIn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/activity_sign_up_background"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/logopng"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:fontFamily="@font/nunitobold"
+            android:textColor="@color/mainColor"
+            android:layout_marginLeft="30dp"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/in_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitoregular"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint="Username"
+            android:backgroundTint="@color/mainColor"
+            />
+        <EditText
+            android:id="@+id/in_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_visibility_black_24dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/nunitoregular"
+
+            android:hint="Password"
+            android:backgroundTint="@color/mainColor"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            >
+
+            <Button
+                android:id="@+id/in_bt_masuk"
+                android:text="Masuk"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:background="@drawable/activity_sign_up_button_signup"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitobold"
+                android:textSize="17dp"
+                android:text="Belum Punya Akun?"/>
+            <TextView
+                android:id="@+id/in_tv_daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitobold"
+                android:textSize="17dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/thirdColor"
+                android:text="Daftar"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

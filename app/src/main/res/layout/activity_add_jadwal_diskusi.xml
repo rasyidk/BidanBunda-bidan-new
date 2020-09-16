@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".bottomnavigation.profile.extend.jadwalDiskusi.extendJadwalDiskusi.addJadwalDiskusi">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/jd_image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_close_black_24dp"
+            />
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_toRightOf="@id/jd_image_back"
+           android:layout_toLeftOf="@id/jd_img_add"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Jadwal baru"
+               android:layout_centerHorizontal="true"
+               android:padding="10dp"
+             android:layout_margin="5dp"
+               android:textColor="@color/black"
+               android:textSize="20dp"
+               />
+       </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/jd_img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/jd_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Diskusi"/>
+
+        <RelativeLayout
+            android:id="@+id/jd_rl_date"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/jd_img_date_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/jd_tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/jd_img_date_arrow"
+                />
+
+            <TextView
+                android:layout_toLeftOf="@id/jd_tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kapan"
+                style="@style/TextAppearance.AppCompat.Headline"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/jd_rl_time"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/jd_img_time_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/jd_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Waktu"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/jd_img_time_arrow"
+                />
+
+            <TextView
+                android:layout_toLeftOf="@id/jd_tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mulai"
+                style="@style/TextAppearance.AppCompat.Headline"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catatan: Jadwal ini dijadikan notifikasi untuk pasien sebagai pengingat"/>
+    </LinearLayout>
+
+</LinearLayout>
